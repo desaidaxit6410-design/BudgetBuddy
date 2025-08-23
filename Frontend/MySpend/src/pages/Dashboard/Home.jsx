@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import InfoCard from '../../components/Cards/InfoCard'
 import { LuHandCoins, LuWalletMinimal } from 'react-icons/lu'
 import { IoMdCard } from "react-icons/io"
-import { addIndianThousandSeparator } from '../../utils/helper';
+import { addIndianThousandSeparator } from '../../Utils/helper';
 import RecentTransactions from '../../components/Dashboard/RecentTransactions';
 import FinanceOverview from '../../components/Dashboard/FinanceOverview';
 import ExpenseTransaction from '../../components/Dashboard/ExpenseTransaction';
@@ -131,3 +131,4 @@ const Home = () => {
 };
 
 export default Home;
+
