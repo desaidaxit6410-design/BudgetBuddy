@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Input from '../Inputnputs/Input'
+import Input from '../Inputs/Input'
 import EmojiPickerPopUp from '../EmojiPickerPopUp'
 
 const AddExpenseForm = ({ onAddExpense }) => {
@@ -55,5 +55,6 @@ const AddExpenseForm = ({ onAddExpense }) => {
         </div>
     )
 }
+
 
 export default AddExpenseForm
