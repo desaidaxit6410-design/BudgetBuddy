@@ -64,14 +64,15 @@ backend/
 ### 🖥 Backend Setup  
 
 navigate to backend folder
-```
+```sh
 cd backend
 
 install dependencies
-```
+```sh
 npm install
 
 copy environment variables
+```sh
 cp .env.example .env # then edit with your MongoDB URI & JWT secret
 
 Start backend server
