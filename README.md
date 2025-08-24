@@ -33,25 +33,26 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 
 ## 📂 Project Structure  
  backend/
- config/
- controller/
- middlewares/
- models/
- routes/
- uploads/
- .env.example
- server.js
+│── config/
+│── controller/
+│── middlewares/
+│── models/
+│── routes/
+│── uploads/
+│── .env.example
+└── server.js
 
  frontend/
- expense-tracker/
- src/
- components/
- context/
- hooks/
- pages/
- utils/
- index.html
- package.json
+└── MySpend/
+│── src/
+│ ├── components/
+│ ├── context/
+│ ├── hooks/
+│ ├── pages/
+│ └── utils/
+│
+├── index.html
+└── package.json
 
 
 ---
