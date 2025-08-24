@@ -62,15 +62,16 @@ backend/
 
 ### 🖥 Backend Setup  
 
-1. **Install dependencies:**  
+1. **Install dependencies:**
+```
 cd backend
 npm install
 
 
-2. **Configure environment variables:**  
+3. **Configure environment variables:**  
 Copy `.env.example` to `.env` and fill in your MongoDB URI and JWT secret.  
 
-3. **Start the backend server:**  
+4. **Start the backend server:**  
 npm run dev
 
 
