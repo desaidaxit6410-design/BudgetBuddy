@@ -68,29 +68,31 @@ cd backend
 npm install
 
 ```
+2. **Start the backend server:**
+```
+npm run dev
+```
 3. **Configure environment variables:**
 ```
 Copy `.env.example` to `.env` and fill in your MongoDB URI and JWT secret.  
 
 ```
-5. **Start the backend server:**
-```
-npm run dev
-
-
 The backend runs on [http://localhost:8000](http://localhost:8000) by default.  
 
 ---
 
 ### 🌐 Frontend Setup  
 
-1. **Install dependencies:**  
+1. **Install dependencies:**
+2. 
 navigate to frontend folder
-cd frontend/expense-tracker
+```
+cd frontend/MySpend
 
 install dependencies
+```
 npm install
-
+```
 start React app
 npm run dev
 
