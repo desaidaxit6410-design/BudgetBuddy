@@ -34,8 +34,17 @@ app.use("/api/v1/dashboard", require("./routes/dashboardRoutes"));
 // Serve static files from the uploads directory
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// This handles all other routes and serves index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
 
 
