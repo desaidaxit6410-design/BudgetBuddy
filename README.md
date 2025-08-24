@@ -1,6 +1,6 @@
-# 💸 SpendWise – MERN Expense Tracker  
+# 💸 MySpend – MERN Expense Tracker  
 
-SpendWise is a **full‑stack MERN application** for tracking income and expenses, visualizing financial data, and managing personal finances with ease.  
+MySpend is a **full‑stack MERN application** for tracking income and expenses, visualizing financial data, and managing personal finances with ease.  
 
 It features **secure authentication, interactive dashboards, charts, Excel export, and a modern responsive UI** – everything you need to stay on top of your finances.  
 
@@ -33,4 +33,88 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 ---
 
 ## 📂 Project Structure  
+backend/
+config/
+controller/
+middlewares/
+models/
+routes/
+uploads/
+.env.example
+server.js
+
+frontend/
+expense-tracker/
+src/
+components/
+context/
+hooks/
+pages/
+utils/
+index.html
+package.json
+
+
+---
+
+## ⚡ Getting Started  
+
+### 🔑 Prerequisites  
+- Node.js & npm  
+- MongoDB (local or cloud e.g. Atlas)  
+
+---
+
+### 🖥 Backend Setup  
+
+navigate to backend folder
+cd backend
+
+install dependencies
+npm install
+
+copy environment variables
+cp .env.example .env # then edit with your MongoDB URI & JWT secret
+
+start backend server
+npm run dev
+
+
+Backend runs at 👉 [**http://localhost:8000**](http://localhost:8000)  
+
+---
+
+### 🌐 Frontend Setup  
+navigate to frontend folder
+cd frontend/expense-tracker
+
+install dependencies
+npm install
+
+start React app
+npm run dev
+
+
+Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)  
+
+---
+
+## 🎯 Usage  
+
+1. **Sign Up / Login** – Create an account or log into existing account  
+2. **Dashboard** – See financial summary, charts, and latest transactions  
+3. **Add Income/Expense** – Add entries with optional emoji category  
+4. **Delete Transactions** – Hover over cards to delete instantly  
+5. **Export Data** – Download income/expense data as Excel  
+6. **Profile Image** – Upload a profile picture during sign‑up  
+
+---
+
+## 🌍 Environment Variables  
+
+Create a `.env` file in the backend folder:  
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=8000
+CLIENT_URL=http://localhost:5173
 
