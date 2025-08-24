@@ -24,7 +24,7 @@ const Income = () => {
   const [incomeData, setIncomeData] = useState([])
   const [loading, setLoading] = useState(false)
   const [openDeleteAlert, setOpenDeleteAlert] = useState({ show: false, data: null })
-  const [openAddIncomeModal, setOpenAddIncomeModal] = useState(false) // 🔄 set default false
+  const [openAddIncomeModal, setOpenAddIncomeModal] = useState(true) // 🔄 set default true
 
   // Fetch income details
   const fetchIncomeDetails = async () => {
@@ -153,3 +153,4 @@ const Income = () => {
 }
 
 export default Income
+
