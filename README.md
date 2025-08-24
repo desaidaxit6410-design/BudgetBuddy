@@ -18,7 +18,11 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 - 📱 **Responsive UI** – Works seamlessly across desktop, tablet, and mobile  
 - 🧭 **Intuitive Navigation** – Sidebar menu for Dashboard, Income, Expenses, and Logout  
 - ⚡ **Quick Delete** – Hover to delete transactions instantly  
-- 🖼 **Profile Image Upload** – Upload an avatar during sign‑up  
+- 🖼 **Profile Image Upload** – Upload an avatar during sign‑up
+
+1. Clone the repository:
+```sh
+ git clone 
 
 ---
 
