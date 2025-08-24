@@ -4,8 +4,6 @@ MySpend is a **full‑stack MERN application** for tracking income and expenses,
 
 It features **secure authentication, interactive dashboards, charts, Excel export, and a modern responsive UI** – everything you need to stay on top of your finances.  
 
----
-
 ## 🚀 Features  
 
 - 🔐 **User Authentication** – Secure signup/login using **JWT** with session persistence  
@@ -28,8 +26,6 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 - **Authentication:** JSON Web Tokens (JWT)  
 - **File Uploads:** Multer (profile images)  
 - **Excel Export:** XLSX  
-
----
 
 ## 📂 Project Structure  
 ```
@@ -54,10 +50,11 @@ backend/
 │
 ├── index.html
 └── package.json
-
-##⚡ Getting Started
-### 🔑 Prerequisites
 ```
+
+###⚡ Getting Started
+### 🔑 Prerequisites
+
 - Node.js & npm  
 - MongoDB (local or cloud e.g. Atlas)  
 
@@ -68,8 +65,7 @@ navigate to backend folder
 cd backend
 
 install dependencies
-
-
+```
 npm install
 
 copy environment variables
