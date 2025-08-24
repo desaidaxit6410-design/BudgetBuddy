@@ -52,37 +52,35 @@ backend/
 └── package.json
 ```
 
-###⚡ Getting Started
-### 🔑 Prerequisites
+## ⚡ Getting Started  
 
+### 🔑 Prerequisites  
 - Node.js & npm  
-- MongoDB (local or cloud e.g. Atlas)  
+- MongoDB database  
+
+---
 
 ### 🖥 Backend Setup  
 
-navigate to backend folder
-```
+1. **Install dependencies:**  
 cd backend
-
-install dependencies
-```
 npm install
 
-copy environment variables
 
-```
-cp .env.example .env # then edit with your MongoDB URI & JWT secret
+2. **Configure environment variables:**  
+Copy `.env.example` to `.env` and fill in your MongoDB URI and JWT secret.  
 
-Start backend server
-```
+3. **Start the backend server:**  
 npm run dev
 
 
-Backend runs at 👉 [**http://localhost:8000**](http://localhost:8000)  
+The backend runs on [http://localhost:8000](http://localhost:8000) by default.  
 
 ---
 
 ### 🌐 Frontend Setup  
+
+1. **Install dependencies:**  
 navigate to frontend folder
 cd frontend/expense-tracker
 
