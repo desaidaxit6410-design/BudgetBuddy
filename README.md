@@ -24,8 +24,6 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 ```sh
  git clone https://github.com/shivam15102005/MySpend-Expense-Tracker.git
 
----
-
 ## 🛠 Tech Stack  
 
 **Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios, Emoji Picker  
@@ -37,15 +35,15 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 ---
 
 ## 📂 Project Structure  
-backend/
-config/
-controller/
-middlewares/
-models/
-routes/
-uploads/
-.env.example
-server.js
+ backend/
+ config/
+ controller/
+ middlewares/
+ models/
+ routes/
+ uploads/
+ .env.example
+ server.js
 
 frontend/
 expense-tracker/
