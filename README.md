@@ -22,7 +22,7 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 
 1. Clone the repository:
 ```sh
- git clone 
+ git clone https://github.com/shivam15102005/MySpend-Expense-Tracker.git
 
 ---
 
