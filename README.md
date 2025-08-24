@@ -27,31 +27,6 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 - **File Uploads:** Multer (profile images)  
 - **Excel Export:** XLSX  
 
-## 📂 Project Structure  
-```
-backend/
-│── config/
-│── controller/
-│── middlewares/
-│── models/
-│── routes/
-│── uploads/
-│── .env.example
-└── server.js
-
- frontend/
-└── MySpend/
-│── src/
-│ ├── components/
-│ ├── context/
-│ ├── hooks/
-│ ├── pages/
-│ └── utils/
-│
-├── index.html
-└── package.json
-```
-
 ## ⚡ Getting Started  
 
 ### 🔑 Prerequisites  
@@ -99,6 +74,31 @@ npm run dev
 Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)] 
 
 ```
+## 📂 Project Structure  
+```
+backend/
+│── config/
+│── controller/
+│── middlewares/
+│── models/
+│── routes/
+│── uploads/
+│── .env.example
+└── server.js
+
+ frontend/
+└── MySpend/
+│── src/
+│ ├── components/
+│ ├── context/
+│ ├── hooks/
+│ ├── pages/
+│ └── utils/
+│
+├── index.html
+└── package.json
+```
+
 
 ## 🎯 Usage  
 
