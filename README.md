@@ -96,9 +96,9 @@ npm install
 npm run dev
 
 
-Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)  
+Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)] 
 
----
+```
 
 ## 🎯 Usage  
 
@@ -112,7 +112,7 @@ Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)
 ---
 
 ## 🌍 Environment Variables  
-
+```
 Create a `.env` file in the backend folder:  
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
