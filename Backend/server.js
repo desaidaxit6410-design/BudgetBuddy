@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Middleware to handle cors
 app.use(cors({
-  origin:"https://myspend-expense-tracker-front.onrender.com",
+  origin:process.env.CLIENT_URL || "*",
   methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
   allowedHeaders:["Content-Type", "Authorization"] ,
 
@@ -48,6 +48,7 @@ app.get('*', (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
 
 
 
