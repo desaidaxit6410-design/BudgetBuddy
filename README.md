@@ -55,25 +55,27 @@ backend/
 ├── index.html
 └── package.json
 
-## ⚡ Getting Started
+##⚡ Getting Started
+### 🔑 Prerequisites
 ```
-
-### 🔑 Prerequisites  
 - Node.js & npm  
 - MongoDB (local or cloud e.g. Atlas)  
 
 ### 🖥 Backend Setup  
-```
+
 navigate to backend folder
+```
 cd backend
 
 install dependencies
+```
 npm install
 
 copy environment variables
 cp .env.example .env # then edit with your MongoDB URI & JWT secret
 
-start backend server
+Start backend server
+```
 npm run dev
 
 
