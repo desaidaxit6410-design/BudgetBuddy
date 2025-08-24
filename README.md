@@ -60,9 +60,9 @@ backend/
 
 ---
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```
- git clone https://github.com/kaushalsahu07/weather.git
+ git clone https://github.com/shivam15102005/MySpend-Expense-Tracker.git
 ```
 ### 🖥 Backend Setup  
 
