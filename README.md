@@ -55,19 +55,15 @@ backend/
 ├── index.html
 └── package.json
 
-
----
-
-## ⚡ Getting Started  
+## ⚡ Getting Started
+```
 
 ### 🔑 Prerequisites  
 - Node.js & npm  
 - MongoDB (local or cloud e.g. Atlas)  
 
----
-
 ### 🖥 Backend Setup  
-
+```
 navigate to backend folder
 cd backend
 
