@@ -75,8 +75,25 @@ Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)]
 
 **Login Page**
 ![Login Page](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/f71d16b1eefc8b764b33496db6f740e1d7eaca92/Screenshot%202025-08-24%20190518.png)
+
 **Footer**
 ![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/2512a5f6c052a6297ce36015bafb720e7ac6e4cf/Screenshot%202025-08-24%20190537.png)
+
+**Signup Page**
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190557.png)
+
+**Dashboard**
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190644.png)
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190718.png)
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190727.png)
+
+**Income Dashboard**
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190747.png)
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190759.png)
+
+
+**Expense Dashboard**
+![Alt img](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/e06437e48be78ddebfc4759ff612ec5ae94d7a0a/Screenshot%202025-08-24%20190814.png)
 
 ## 📂 Project Structure  
 ```
