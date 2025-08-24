@@ -69,10 +69,10 @@ The backend runs on [http://localhost:8000](http://localhost:8000) by default.
 cd frontend/MySpend
 npm install
 npm run dev
-
+```
 
 Frontend runs at 👉 [**http://localhost:5173**](http://localhost:5173)]
-
+```
 ![Login Page](https://github.com/shivam15102005/MySpend-Expense-Tracker/blob/f71d16b1eefc8b764b33496db6f740e1d7eaca92/Screenshot%202025-08-24%20190518.png)
 
 ```
