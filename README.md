@@ -20,19 +20,18 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 - ⚡ **Quick Delete** – Hover to delete transactions instantly  
 - 🖼 **Profile Image Upload** – Upload an avatar during sign‑up
 
-
-## Clone the repository:
+## Installation
+Clone the repository:
 ```sh
  git clone https://github.com/shivam15102005/MySpend-Expense-Tracker.git
 
----
 ## 🛠 Tech Stack  
 
-**Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios, Emoji Picker  
-**Backend:** Node.js, Express, MongoDB, Mongoose, Multer, XLSX  
-**Authentication:** JSON Web Tokens (JWT)  
-**File Uploads:** Multer (profile images)  
-**Excel Export:** XLSX  
+- **Frontend:** React, Vite, Tailwind CSS, React Router, Recharts, Axios, Emoji Picker  
+- **Backend:** Node.js, Express, MongoDB, Mongoose, Multer, XLSX  
+- **Authentication:** JSON Web Tokens (JWT)  
+- **File Uploads:** Multer (profile images)  
+- **Excel Export:** XLSX  
 
 ---
 
