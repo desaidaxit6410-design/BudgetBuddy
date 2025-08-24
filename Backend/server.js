@@ -40,10 +40,11 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Serve React SPA
 app.use(express.static(path.join(__dirname, 'dist')));
-app.all('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
