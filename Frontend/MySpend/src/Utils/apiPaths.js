@@ -1,4 +1,4 @@
-export const BASE_URL = "https://myspend-expense-tracker-backendd.onrender.com";
+export const BASE_URL = "https://myspend-expense-tracker-bac.onrender.com";
 
 // utils/apiPaths.js
 
@@ -29,4 +29,5 @@ export const API_PATHS = {
     }
 
 };
+
 
