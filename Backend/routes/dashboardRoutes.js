@@ -1,11 +1,14 @@
-const express = require("express");
+// backend/routes/dashboardRoutes.js
+import express from "express";
+import { protect } from "../middleware/authMiddleware.js";
+import { getDashboardData } from "../controllers/dashboardController.js";
+
 const router = express.Router();
-const { protect } = require("../middleware/authMiddleware");
 
-const { getDashboardData } = require("../controllers/dashboardController");
+// =======================
+// Dashboard routes
+// =======================
+router.get("/", protect, getDashboardData);
 
-// Define routes for income management
-// Ensure that all routes are protected by the auth middleware
-router.get('/',protect, getDashboardData);
-
-module.exports = router;
+// Export as default for ES Module
+export default router;
