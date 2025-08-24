@@ -17,7 +17,7 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 - 🧭 **Intuitive Navigation** – Sidebar menu for Dashboard, Income, Expenses, and Logout  
 - ⚡ **Quick Delete** – Hover to delete transactions instantly  
 - 🖼 **Profile Image Upload** – Upload an avatar during sign‑up
-
+  
 
 ## 🛠 Tech Stack  
 
@@ -60,6 +60,10 @@ backend/
 
 ---
 
+1. Clone the repository:
+```
+ git clone https://github.com/kaushalsahu07/weather.git
+```
 ### 🖥 Backend Setup  
 
 1. **Install dependencies:**
@@ -83,17 +87,12 @@ The backend runs on [http://localhost:8000](http://localhost:8000) by default.
 
 ### 🌐 Frontend Setup  
 
-1. **Install dependencies:**
-2. 
-navigate to frontend folder
-```
-cd frontend/MySpend
+ **Install dependencies:**
 
-install dependencies
-```
+1. **Navigate To Frontend Folder And Run**
+```   
+cd frontend/MySpend
 npm install
-```
-start React app
 npm run dev
 
 
