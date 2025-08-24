@@ -20,10 +20,6 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 - ⚡ **Quick Delete** – Hover to delete transactions instantly  
 - 🖼 **Profile Image Upload** – Upload an avatar during sign‑up
 
-## Installation
-Clone the repository:
-```sh
- git clone https://github.com/shivam15102005/MySpend-Expense-Tracker.git
 
 ## 🛠 Tech Stack  
 
