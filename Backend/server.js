@@ -30,7 +30,7 @@ connectDB();
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/income", incomeRoutes);
 app.use("/api/v1/expense", expenseRoutes);
-app.use("/api/v1/dashboard", require("./routes/dashboardRoutes"));
+app.use("/api/v1/dashboard", dashboardRoutes);
 
 // Serve static files from the uploads directory
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
@@ -48,6 +48,7 @@ app.get('*', (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
 
 
 
