@@ -1,14 +1,17 @@
-const express = require('express');
+// backend/routes/incomeRoutes.js
+import express from "express";
+import { getAllIncome, addIncome, downloadIncomeExcel, deleteIncome } from "../controllers/incomeController.js";
+import { protect } from "../middleware/authMiddleware.js";
+
 const router = express.Router();
 
-const { getAllIncome, addIncome, downloadIncomeExcel, deleteIncome } = require('../controllers/incomeController');
-const {protect} = require('../middleware/authMiddleware');
+// =======================
+// Income routes
+// =======================
+router.get("/get", protect, getAllIncome);
+router.post("/add", protect, addIncome);
+router.get("/downloadexcel", protect, downloadIncomeExcel);
+router.delete("/:id", protect, deleteIncome);
 
-// Define routes for income management
-// Ensure that all routes are protected by the auth middleware
-router.get('/get',protect, getAllIncome);
-router.post('/add', protect, addIncome);
-router.get('/downloadexcel',protect, downloadIncomeExcel);
-router.delete('/:id',protect, deleteIncome);
-
-module.exports = router;
+// Export as default for ES Module
+export default router;
