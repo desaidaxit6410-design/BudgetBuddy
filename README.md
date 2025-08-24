@@ -32,7 +32,8 @@ It features **secure authentication, interactive dashboards, charts, Excel expor
 ---
 
 ## 📂 Project Structure  
- backend/
+```
+backend/
 │── config/
 │── controller/
 │── middlewares/
