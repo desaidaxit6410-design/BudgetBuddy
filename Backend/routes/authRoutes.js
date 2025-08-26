@@ -1,24 +1,18 @@
 const express = require("express");
 const router = express.Router();
 const { protect } = require("../middleware/authMiddleware");
-
 const { registerUser, loginUser, getUserInfo } = require("../controllers/authController");
 const upload = require("../middleware/uploadMiddleware");
 
-router.post("/register", registerUser);
+// ✅ Register with profile image (Cloudinary handled inside controller)
+router.post("/register", upload.single("profile"), registerUser);
+
+// ✅ Login route
 router.post("/login", loginUser);
-router.get("/getUser",protect, getUserInfo);
 
-router.post("/upload-image", upload.single("image"), (req, res) => {
-    if (!req.file) {
-        return res.status(400).json({ message: "No file uploaded" });
-    }
-    const imageUrl = `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`;
-    // Here you can save the imageUrl to the user's profile or database if needed
-    res.status(200).json({ message: "File uploaded successfully", imageUrl });
-});
+// ✅ Protected route (get logged-in user info)
+router.get("/getUser", protect, getUserInfo);
 
-
- 
-
+// ❌ Removed local /upload-image (no need for Render)
 module.exports = router;
+// Removed local /upload-image (no need for Render)
