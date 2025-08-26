@@ -9,7 +9,7 @@ const AuthLayout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* HEADER */}
-      <header className="w-full bg-[#f5f3f2] shadow-sm"> 
+      <header className="w-full bg-[#f5f3f2] shadow-sm sticky top-0 z-50"> 
         <div className="w-full px-6 md:px-12 py-4 flex items-center">
           {/* Logo */}
           <div className="flex items-center gap-3">
@@ -104,3 +104,4 @@ const StatsInfoCard = ({ icon, label, value, color }) => {
     </div>
   );
 };
+
