@@ -7,7 +7,6 @@ import ProfilePhotoSelector from '../../components/Inputs/ProfilePhotoSelector';
 import axiosInstance from '../../Utils/axiosInstance';
 import { API_PATHS } from '../../Utils/apiPaths';
 import { UserContext } from '../../context/userContext';
-import uploadImage from '../../Utils/uploadImage';
 import Loader from '../../components/Loader'; // ✅ full-page loader
 
 const SignUp = () => {
@@ -35,7 +34,6 @@ const SignUp = () => {
   // Handle signup function
   const handleSignUp = async (e) => {
     e.preventDefault();
-    let profileImageUrl = "";
 
     // Validation checks
     if (!fullName.trim()) {
@@ -56,32 +54,31 @@ const SignUp = () => {
     }
 
     setError(null);
-    setSigningUp(true); // start button loader
+    setSigningUp(true);
 
     try {
-      // Upload profile image if provided
+      // ✅ Use FormData for image + text fields
+      const formData = new FormData();
+      formData.append("fullName", fullName);
+      formData.append("email", email);
+      formData.append("password", password);
       if (profilePic) {
-        const imageUploads = await uploadImage(profilePic);
-        profileImageUrl = imageUploads.imageUrl || "";
+        formData.append("profile", profilePic); // 👈 matches backend multer field
       }
 
-      // Call register API
-      const response = await axiosInstance.post(API_PATHS.AUTH.REGISTER, {
-        fullName,
-        email,
-        password,
-        profileImageUrl,
-      });
+      const response = await axiosInstance.post(
+        API_PATHS.AUTH.REGISTER,
+        formData,
+        { headers: { "Content-Type": "multipart/form-data" } }
+      );
 
       const { token, user } = response.data;
 
       if (token) {
         localStorage.setItem("token", token);
 
-        // Ensure profileImageUrl is always included in context
-        const updatedUser = { ...user, profileImageUrl };
-
-        updateUser(updatedUser);
+        // ensure user context has Cloudinary URL
+        updateUser(user);
         navigate("/dashboard");
       }
     } catch (error) {
@@ -90,10 +87,9 @@ const SignUp = () => {
       } else {
         setError("An error occurred. Please try again.");
       }
-      // auto-clear after a few seconds (optional)
       setTimeout(() => setError(null), 5000);
     } finally {
-      setSigningUp(false); // stop button loader
+      setSigningUp(false);
     }
   };
 
@@ -112,7 +108,7 @@ const SignUp = () => {
           {/* Profile Photo Selector */}
           <ProfilePhotoSelector image={profilePic} setImage={setProfilePic} />
 
-          {/* Input fields stacked vertically with smaller gap */}
+          {/* Input fields */}
           <div className="grid grid-cols-1 gap-0.5">
             <Input
               value={fullName}
