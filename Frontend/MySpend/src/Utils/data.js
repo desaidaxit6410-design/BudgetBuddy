@@ -1,4 +1,6 @@
 import { LuHandCoins, LuLayoutDashboard, LuLogOut, LuWalletMinimal } from "react-icons/lu"
+import { FaUserEdit } from "react-icons/fa";
+
 
 export const SIDE_MENU_DATA = [
     {
@@ -34,3 +36,4 @@ export const SIDE_MENU_DATA = [
     }
 
 ]
+
