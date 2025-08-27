@@ -7,8 +7,10 @@ import axiosInstance from "../Utils/axiosInstance";
 import { API_PATHS } from "../Utils/apiPaths";
 import { UserContext } from "../context/userContext";
 import Loader from "../components/Loader";
+import { useUserAuth } from '../../hooks/useUserAuth';
 
 const Profile = () => {
+  useUserAuth();
   const { user, updateUser } = useContext(UserContext);
 
   const [profilePic, setProfilePic] = useState(null);
@@ -161,3 +163,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
