@@ -7,7 +7,7 @@ import axiosInstance from "../Utils/axiosInstance";
 import { API_PATHS } from "../Utils/apiPaths";
 import { UserContext } from "../context/userContext";
 import Loader from "../components/Loader";
-import { useUserAuth } from '../../hooks/useUserAuth';
+import { useUserAuth } from '../hooks/useUserAuth';
 
 const Profile = () => {
   useUserAuth();
@@ -163,4 +163,5 @@ const Profile = () => {
 };
 
 export default Profile;
+
 
