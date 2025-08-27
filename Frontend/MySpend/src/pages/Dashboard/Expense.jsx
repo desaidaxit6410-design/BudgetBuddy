@@ -16,7 +16,7 @@ const Expense = () => {
   const [expenseData, setExpenseData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [openDeleteAlert, setOpenDeleteAlert] = useState({ show: false, data: null });
-  const [openAddExpenseModal, setOpenAddExpenseModal] = useState(true);
+  const [openAddExpenseModal, setOpenAddExpenseModal] = useState(false);
 
   // Fetch all expenses
   const fetchExpenseDetails = async () => {
@@ -161,4 +161,5 @@ const Expense = () => {
 };
 
 export default Expense;
+
 
