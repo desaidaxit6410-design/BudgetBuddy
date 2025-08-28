@@ -18,6 +18,14 @@ const AuthLayout = ({ children }) => {
           </div>
 
           <div className="ml-auto flex items-center gap-5">
+          <a 
+               href="https://github.com/shivam15102005/MySpend-Expense-Tracker.git" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="px-4 py-2 rounded-md bg-violet-600 text-white text-sm hover:bg-blue-700"
+               >   Documentation
+          </a>
+          
             <Link to="/login" className="px-4 py-2 rounded-md bg-violet-600 text-white text-sm hover:bg-blue-700">
               Sign in
             </Link>
@@ -104,4 +112,5 @@ const StatsInfoCard = ({ icon, label, value, color }) => {
     </div>
   );
 };
+
 
